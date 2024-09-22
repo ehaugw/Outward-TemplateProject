@@ -1,12 +1,12 @@
 new:
 	cd .. && \
-		cp -r EmptyProject $(NAME) && \
+		cp -r TemplateProject $(NAME) && \
 		cd $(NAME) && \
-		mv EmptyProject.cs $(NAME).cs && \
-		mv EmptyProject.csproj $(NAME).csproj && \
-		sed -ie 's/EmptyProject/$(NAME)/g' $(NAME).csproj && \
-		sed -ie 's/emptyproject/$(shell echo $(NAME) | tr A-Z a-z)/g' $(NAME).cs && \
-		sed -ie 's/EmptyProject/$(NAME)/g' $(NAME).cs && \
+		mv TemplateProject.cs $(NAME).cs && \
+		mv TemplateProject.csproj $(NAME).csproj && \
+		sed -ie 's/TemplateProject/$(NAME)/g' $(NAME).csproj && \
+		sed -ie 's/templateproject/$(shell echo $(NAME) | tr A-Z a-z)/g' $(NAME).cs && \
+		sed -ie 's/TemplateProject/$(NAME)/g' $(NAME).cs && \
 		git init && git add . && git commit -m "initial commit"
 
 

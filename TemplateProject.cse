@@ -9,7 +9,7 @@
     [BepInPlugin(GUID, NAME, VERSION)]
     public class EmptyProject : BaseUnityPlugin
     {
-        public const string GUID = "com.ehaugw.emptyproject";
+        public const string GUID = "com.ehaugw.templateproject";
         public const string VERSION = "1.0.0";
         public const string NAME = "EmptyProject";
 
